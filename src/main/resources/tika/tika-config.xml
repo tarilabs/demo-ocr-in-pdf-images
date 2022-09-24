@@ -1,0 +1,14 @@
+<properties>
+    <parsers>
+        <parser class="org.apache.tika.parser.DefaultParser">
+            <mime-exclude>application/pdf</mime-exclude>
+        </parser>
+        <parser class="org.apache.tika.parser.pdf.PDFParser">
+            <mime>application/pdf</mime>
+            <params>
+                <!-- <param name="ocrStrategy" type="string">ocr_only</param> -->
+                <param name="extractInlineImages" type="bool">true</param>
+            </params>
+        </parser>
+    </parsers>
+</properties>
